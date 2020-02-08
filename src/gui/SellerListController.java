@@ -194,6 +194,7 @@ public class SellerListController implements Initializable, DataChangeListener {
 				updateTableView();
 			}
 			catch (DbIntegrityException e) {
+				
 				e.printStackTrace();
 				Alerts.showAlerts("Error removing object", null, e.getMessage(), AlertType.ERROR);
 			}
